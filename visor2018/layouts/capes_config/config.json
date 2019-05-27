@@ -1,0 +1,65 @@
+{
+  "i18n": true,
+  "controls": {
+    "navBar": true,
+    "basemapSelector": {
+      "div": "bms"
+    },
+    "baseLayers": [
+      {
+        "id": "IDE_WMTS",
+        "title": "WMTS",
+        "type": "WMTS",
+        "url": "http://ide.cime.es/geoserver2/gwc/service/wmts",
+        "layerNames": "base_referencia:base_referencia",
+        "format": "image/jpeg",
+        "isDefault": false,
+        "hideTree": true,
+        "thumbnail": "//ide.cime.es/test/api_sitna/api-sitna-master/Build/TC/css/img/thumb-basemap.png",
+        "minResolution": 2
+      }
+    ],
+    "TOC": false,
+    "workLayerManager": {
+      "div": "toc"
+    },
+    "legend": {
+      "div": "legend"
+    },
+    "coordinates": {
+      "div": "coordinates"
+    },
+    "search": {
+      "div": "search"
+    },
+    "measure": false,
+    "drawMeasureModify": {
+      "div": "measure",
+      "displayElevation": {
+        "resolution": 20,
+        "sampleNumber": 200,
+        "maxCoordLength": 3000
+      }
+    },
+    "geolocation": {
+      "div": "geolocation",
+      "gapHill": 20
+    },
+    "share": {
+      "div": "share"
+    },
+    "download": {
+      "div": "download"
+    },
+    "overviewMap": {
+      "div": "ovmap",
+      "layer": "mapabase"
+    },
+    "cacheBuilder": {
+      "div": "offline"
+    },
+    "popup": true,
+    "attribution": true,
+    "scaleBar": true
+  }
+}

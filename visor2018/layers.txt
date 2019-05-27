@@ -1,0 +1,760 @@
+﻿            SITNA.Cfg.controls.layerCatalog = {
+                div: "catalog",
+                enableSearch: true,
+                layerTreeGroups: [{
+                    id: "node0"
+                    , title: "Serveis IDE Menorca"
+                }, {
+                    id: "node2"
+                    , title: "Ortofotos"
+                }, {
+                    id: "node1"
+                    , title: "Serveis temàtics IDEIB"
+                }, {
+                    id: "node3"
+                    , title: "Serveis bàsics IDEIB"
+                }, {
+                    id: "node4"
+                    , title: "Serveis bàsics IDEE"
+                }
+                ],
+                layers: [
+                    //Serveis IDE Menorca
+                {
+                    id: "turisme"
+                    , title: "Turisme"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "http://ide.cime.es/geoserver/turisme/wms/"
+                    , hideTree: false
+                    , parentGroupNode: "node0"
+                }, {
+                    id: "ambiental"
+                    , title: "Ambiental"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "http://ide.cime.es/geoserver/ambiental/wms/"
+                    , hideTree: false
+                    , parentGroupNode: "node0"
+                }, {
+                    id: "equipaments"
+                    , title: "Equipaments"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "http://ide.cime.es/geoserver/equipaments/wms/"
+                    , hideTree: false
+                    , parentGroupNode: "node0"
+                }, {
+                    id: "ordenacio"
+                    , title: "Ordenacio"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "http://ide.cime.es/geoserver/ordenacio/wms/"
+                    , hideTree: false
+                    , parentGroupNode: "node0"
+                }, {
+                    id: "base_referencia"
+                    , title: "Base Referència"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "http://ide.cime.es/geoserver2/base_referencia/wms/"
+                    , hideTree: false
+                    , parentGroupNode: "node0"
+                }
+                //Ortofotos
+                /*, {
+                    id: "GOIB_Ortofoto_1956_IB"
+                    , title: "Ortofoto 1956"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    //, url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Ortofoto_1956_IB/MapServer/WMSServer/"
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_Ortofoto_1956_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node2"
+                }*/
+                , {
+                    id: "GOIB_Ortofoto_1989_IB"
+                    , title: "Ortofoto 1989"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Ortofoto_1989_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node2"
+                }, {
+                    id: "GOIB_Ortofoto_2002_IB"
+                    , title: "Ortofoto 2002"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Ortofoto_2002_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node2"
+                }, {
+                    id: "GOIB_Ortofoto_2004_05_06_nuclis"
+                    , title: "Ortofoto 2004 05 06 nuclis"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Ortofoto_2004_05_06_nuclis/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node2"
+                }, {
+                    id: "GOIB_Ortofoto_2006_IB"
+                    , title: "Ortofoto 2006"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Ortofoto_2006_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node2"
+                }, {
+                    id: "GOIB_Ortofoto_2008_nuclis_costa"
+                    , title: "Ortofoto 2008 nuclis costa"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Ortofoto_2008_nuclis_costa/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node2"
+                }, {
+                    id: "GOIB_Ortofoto_2008_IB"
+                    , title: "Ortofoto 2008"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Ortofoto_2008_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node2"
+                }, {
+                    id: "GOIB_Ortofoto_2009_nuclis"
+                    , title: "Ortofoto 2009 nuclis"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Ortofoto_2009_nuclis/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node2"
+                }, {
+                    id: "GOIB_Ortofoto_2010_nuclis"
+                    , title: "Ortofoto 2010 nuclis"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Ortofoto_2010_nuclis/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node2"
+                }, {
+                    id: "GOIB_Ortofoto_2010_IB"
+                    , title: "Ortofoto 2010"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Ortofoto_2010_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node2"
+                }, {
+                    id: "GOIB_Ortofoto_2011_nuclis"
+                    , title: "Ortofoto 2011 nuclis"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Ortofoto_2011_nuclis/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node2"
+                }, {
+                    id: "GOIB_Ortofoto_2012_nuclis"
+                    , title: "Ortofoto 2012 nuclis"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Ortofoto_2012_nuclis/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node2"
+                }, {
+                    id: "GOIB_Ortofoto_2012_IB"
+                    , title: "Ortofoto 2012"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Ortofoto_2012_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node2"
+                }, {
+                    id: "GOIB_Ortofoto_2015_IB"
+                    , title: "Ortofoto 2015"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Ortofoto_2015_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node2"
+                }, {
+                    id: "GOIB_Orto_IB"
+                    , title: "Ortofoto"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Orto_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node2"
+                },
+
+
+
+                //Serveis temàtics IDEIB
+                {
+                    id: "GOIB_OrdLitoral_IB"
+                    , title: "Ordenació del litorial"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_OrdLitoral_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_Hidrografia_IB"
+                    , title: "Hidrografia"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_Hidrografia_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_ControlAigSuperf_IB"
+                    , title: "Control aigües superficials"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    //, url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_ControlAigSuperf_IB/MapServer/WMSServer/"
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_ControlAigSuperf_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_ARPSI_IB"
+                    , title: "ARPSI"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_ARPSI_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_Hidrogeologia_IB"
+                    , title: "Hidrogeologia"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_Hidrogeologia_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_Mines_IB"
+                    , title: "Mines"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_Mines_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_Geologia_IB"
+                    , title: "Geologia"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_Geologia_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_OrdRecMiners_IB"
+                    , title: "Ord. recursos miners"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_OrdRecMiners_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_SolVacant_IB"
+                    , title: "Sol vacant"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_SolVacant_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_MUIB"
+                    , title: "MUIB"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_MUIB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_OrdTerr_IB"
+                    , title: "Ordenació territori"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_OrdTerr_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_PTI_PIT"
+                    , title: "PTI"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    //, url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_PTI_PIT/MapServer/WMSServer/"
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_PTI_PIT/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_OrdLitoral_IB"
+                    , title: "Ordenació litoral"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    //, url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_OrdLitoral_IB/MapServer/WMSServer/"
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_OrdLitoral_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_Meteo_IB"
+                    , title: "Meteo"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_Meteo_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }/*NO VA, {
+                    id: "GOIB_InstalProdIndust_IB"
+                    , title: "IDEIB - Instal. prod. industrial"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_InstalProdIndust_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }*/, {
+                    id: "GOIB_Xarxa_de_transports_IB"
+                    , title: "Xarxa de transports"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_Xarxa_de_transports_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_RegTurisme_IB"
+                    , title: "Reg. turisme"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_RegTurisme_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }/*, {
+                    id: "GOIB_Utilitat_Publica_IB"
+                    , title: "IDEIB - Utilitat pública"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_Utilitat_Publica_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }*/, {
+                    id: "GOIB_ProdDistr_energia_IB"
+                    , title: "Producció i distribució energètica"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_ProdDistr_energia_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_Fotovo_Eol_IB"
+                    , title: "Fotovoltaica i eòlica"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_Fotovo_Eol_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_Abocaments_IB"
+                    , title: "Abocaments"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_Abocaments_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_UnitatsEstadist_IB"
+                    , title: "Unitats estadist."
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_UnitatsEstadist_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_RegEspaisNaturals_IB"
+                    , title: "Reg. espais naturals"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_RegEspaisNaturals_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_UnitAdm_IB"
+                    , title: "Unit. admin."
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_UnitAdm_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_RiscIncendi_IB"
+                    , title: "Risc d'incendi"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_RiscIncendi_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_RegEspaisNaturals_IB"
+                    , title: "Reg. Espais Naturals"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_RegEspaisNaturals_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_DistEspecies_IB"
+                    , title: "DIst. espècies"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    //, url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_DistEspecies_IB/MapServer/WMSServer/"
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_DistEspecies_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_Habitats_IB"
+                    , title: "Habitats"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_Habitats_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_Foto_2002_IB"
+                    , title: "Foto 2002"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Foto_2002_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_Foto_2001_IB"
+                    , title: "Foto 2001"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Foto_2001_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }/*NO VA, {
+                    id: "GOIB_InvForestal_IB"
+                    , title: "IDEIB - Inventari Forestal"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_InvForestal_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }*/, {
+                    id: "GOIB_SIOSE14_IB"
+                    , title: "SIOSE"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_SIOSE14_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_FactorsPastures_IB"
+                    , title: "Factors Pastures"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_FactorsPastures_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_Foto_2015_IB"
+                    , title: "Foto 2015"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Foto_2015_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_Fotocentres_IB"
+                    , title: "Fotocentres"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Fotocentres_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_ToponimiaImatges_IB"
+                    , title: "Toponimia per imatges"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_ToponimiaImatges_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_Toponimia_IB"
+                    , title: "Toponimia"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_Toponimia_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_Foto_2000_nuclis"
+                    , title: "Foto nuclis 2000"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Foto_2000_nuclis/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_Foto_1995_Ma"
+                    , title: "Foto 1995 Mallorca"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Foto_1995_Ma/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_Foto_1995_nuclis"
+                    , title: "Foto 1995 nuclis"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Foto_1995_nuclis/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_MapaBase_IB"
+                    , title: "Mapa base Illes Balears"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_MapaBase_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_MTB_1995_IB"
+                    , title: "MTB 1995"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_MTB_1995_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_Altimetria_IB"
+                    , title: "Altimetria"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_Altimetria_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }, {
+                    id: "GOIB_Relleu_IB"
+                    , title: "Relleu"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_Relleu_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }/*, {
+                    id: "GOIB_Adreces_IB"
+                    , title: "IDEIB - Adreces"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/rest/services/public/GOIB_Adreces_IB/MapServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node1"
+                }*/
+
+                //Serveis bàsics IDEIB
+                , {
+                    id: "GOIB_MTIB5m2012_Me"
+                    , title: "Topogràfic 1:1000 Illes Balears"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_MTIB1m_IB/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node3"
+                }, {
+                    id: "GOIB_MTIB5m2012_Me"
+                    , title: "Topogràfic 1:5000 2012 Menorca"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_MTIB5m2012_Me/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node3"
+                }, {
+                    id: "GOIB_MTIB5m2010_Ma"
+                    , title: "Topogràfic 1:5000 2010 Mallorca"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_MTIB5m2010_Ma/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node3"
+                }, {
+                    id: "GOIB_MTIB5m2008_MeEiFo"
+                    , title: "Topogràfic 1:5000 2008 Menorca, Eivissa i Formentera"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_MTIB5m2008_MeEiFo/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node3"
+                }, {
+                    id: "GOIB_MTIB5m2006_Ma"
+                    , title: "Topogràfic 1:5000 2006 Mallorca"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_MTIB5m2006_Ma/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node3"
+                }, {
+                    id: "GOIB_MTIB5m2002_MeEiFo"
+                    , title: "Topogràfic 1:5000 2002 Menorca, Eivissa i Formentera"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "https://ideib.caib.es/geoserveis/services/public/GOIB_MTIB5m2002_MeEiFo/MapServer/WMSServer/"
+                    , hideTree: false
+                    , parentGroupNode: "node3"
+                }, {
+                    id: "OGC:WMS"
+                    , title: "Cadastre"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "http://ovc.catastro.meh.es/Cartografia/WMS/ServidorWMS.aspx"
+                    , hideTree: false
+                    , parentGroupNode: "node4"
+                }, {
+                    id: "DPMT Costes"
+                    , title: "DPMT Costas"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "http://wms.mapama.es/sig/Costas/DPMT/wms.aspx"
+                    , hideTree: false
+                    , parentGroupNode: "node4"
+                }, {
+                    id: "IDEE base"
+                    , title: "IGNbase"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "http://www.ign.es/wms-inspire/ign-base"
+                    , hideTree: false
+                    , parentGroupNode: "node4"
+                }, {
+                    id: "MARMPosidonia"
+                    , title: "Habitats: Posidonia"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "http://wms.magrama.es/sig/Biodiversidad/Habitat1120/wms.aspx"
+                    , hideTree: false
+                    , parentGroupNode: "node4"
+                }, {
+                    id: "MARMAgroclimatica"
+                    , title: "Agricultura Caracterització agroclimàtica"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "http://wms.magrama.es/sig/Agricultura/CaractAgroClimaticas/wms.aspx"
+                    , hideTree: false
+                    , parentGroupNode: "node4"
+                }, {
+                    id: "MARMSIGPAC"
+                    , title: "SIGPAC"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "http://wms.magrama.es/wms/wms.aspx"
+                    , hideTree: false
+                    , parentGroupNode: "node4"
+                }, {
+                    id: "MTN"
+                    , title: "IGN Mapa Topogràfic Nacional (MTN)"
+                    , hideTitle: false
+                    , type: SITNA.Consts.layerType.WMS
+                    , url: "http://www.ign.es/wms/primera-edicion-mtn"
+                    , hideTree: false
+                    , parentGroupNode: "node4"
+                }
+                ]
+            };
+
+
+
+
+
+
+
+			SITNA.Cfg.baseLayers = [
+                {
+                    id: "IDE_WMTS"
+                    , url: "http://ide.cime.es/geoserver2/gwc/service/wmts"
+                    , layerNames: 'base_referencia:base_referencia'
+                    , type: "WMTS"
+                    , title: "Mapa base IDE Menorca"
+                    , matrixSet: 'EPSG:3857'
+                    , thumbnail: "//ide.cime.es/test/api_sitna/api-sitna-master/Build/TC/css/img/IDE_WMTS.png"
+                    , isBase: true
+                }
+                , {
+                    id: "https://imatges_GOIB_Orto_IB.caib.es/geoserveis/rest/services/imatges/GOIB_Orto_IB/MapServer/WMTS"
+                    , url: "https://ideib.caib.es/geoserveis/rest/services/imatges/GOIB_Orto_IB/MapServer/WMTS"
+                    , layerNames: 'imatges_GOIB_Orto_IB'
+                    , type: "WMTS"
+                    , title: "Ortofoto IDEIB"
+                    , matrixSet: 'default028mm'
+                    , thumbnail: "//ide.cime.es/test/api_sitna/api-sitna-master/Build/TC/css/img/imatges_GOIB_Orto_IB.png"
+                    , isBase: true
+                }
+                , {
+                    id: "public_GOIB_MapaBase_IB"
+                    , url: "https://ideib.caib.es/geoserveis/rest/services/public/GOIB_MapaBase_IB/MapServer/WMTS"
+                    , layerNames: 'public_GOIB_MapaBase_IB'
+                    , type: "WMTS"
+                    , title: "MapaBase IDEIB"
+                    , matrixSet: 'default028mm'
+                    , thumbnail: "//ide.cime.es/test/api_sitna/api-sitna-master/Build/TC/css/img/imatges_GOIB_MapaBase_IB.png"
+                    , isBase: true
+                }
+                , "osm"
+                , "carto_dark"
+                , "carto_light"
+                , "carto_voyager"
+                //, "mapbox_satellite"
+                , "mapbox_streets"
+                ,{
+                    id: "MTN"
+                    , layerNames: 'MTN'
+                    , url: "http://www.ign.es/wmts/mapa-raster"
+                    , type: "WMTS"
+                    , title: "ING- RASTER"
+                    , matrixSet: "GoogleMapsCompatible"
+                    , thumbnail: "//sitna.tracasa.es/api/tc/css/img/thumb-carto_ign.png"
+                    , isBase: true
+                }
+                ,{
+                    id: "ign-base"
+                    , layerNames: 'IGNBaseTodo'
+                    , url: "//www.ign.es/wmts/ign-base"
+                    , type: "WMTS"
+                    , title: "ING- BASE"
+                    , matrixSet: "GoogleMapsCompatible"
+                    , thumbnail: "//sitna.tracasa.es/api/tc/css/img/thumb-basemap_ign.png"
+                    , isBase: true
+                }
+                ,{
+                    id: "ign-mtn"
+                    , layerNames: 'Relieve'
+                    , url: "//servicios.idee.es/wmts/mdt"
+                    , type: "WMTS"
+                    , title: "Relieve"
+                    , matrixSet: "GoogleMapsCompatible"
+                    , thumbnail: "//sitna.tracasa.es/api/tc/css/img/thumb-relief_ign.jpg"
+                    , isBase: true
+                }
+                ,{
+                    id: "ign-pnoa"
+                    , layerNames: 'OI.OrthoimageCoverage'
+                    , url: "//www.ign.es/wmts/pnoa-ma"
+                    , type: "WMTS"
+                    , title: "Ortofoto PNOA"
+                    , matrixSet: "GoogleMapsCompatible"
+                    , thumbnail: "//sitna.tracasa.es/api/tc/css/img/thumb-orthophoto_pnoa.jpg"
+                    , isBase: true
+                }
+                ,{
+                    id: "Me1956"
+                    , url: "http://ide.cime.es/geoserver2/gwc/service/wmts"
+                    , layerNames: 'base_referencia:Me1956'
+                    , type: "WMTS"
+                    , title: "Orto 1956"
+                    , matrixSet: 'EPSG:3857'
+                    , thumbnail: "//ide.cime.es/test/api_sitna/api-sitna-master/Build/TC/css/img/Me1956.png"
+                    , isBase: true
+                }                
+            ];

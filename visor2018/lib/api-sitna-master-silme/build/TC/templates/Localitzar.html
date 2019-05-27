@@ -1,0 +1,80 @@
+<h2>{@i18n $key="localitzar"/} </h2>
+<div class="tc-ctl-tctr tc-ctl-tctr-select tc-ctl-localitzar">
+    <form>
+        <label class="tc-ctl-tctr-tab tc-ctl-localitzar-cca" style="width:calc(100%/4 - 1px)"><input checked type="radio" name="sctnr-sel" value="cca" /><span>{@i18n $key="fitesCamiCavalls"/}</span></label>
+        <label class="tc-ctl-tctr-tab tc-ctl-localitzar-ptsqui" style="width:calc(100%/4 - 1px)"><input type="radio" name="sctnr-sel" value="ptsqui" /><span>{@i18n $key="puntsQuilometrics"/}</span></label>
+        <label class="tc-ctl-tctr-tab tc-ctl-localitzar-guica" style="width:calc(100%/4 - 1px)"><input type="radio" name="sctnr-sel" value="guica" /><span>{@i18n $key="guiaCarrers"/}</span></label>
+        <label class="tc-ctl-tctr-tab tc-ctl-localitzar-vedca" style="width:calc(100%/4 - 1px)"><input type="radio" name="sctnr-sel" value="vedca" /><span>{@i18n $key="vedatsCaca"/}</span></label>
+    </form>
+</div>
+<!-- silme mv -- tc-ctl-tctr-elm-cca fa referencia a el value del label que coincideix amb el darrer guió (cca) -->
+<!--Fites Camí de cavalls-->
+<div class="tc-ctl tc-ctl-tctr-elm tc-ctl-tctr-elm-cca tc-group tc-ctl-download-cnt tc-ctl-download-image">
+    <form>
+        <label style="width:90%">{@i18n $key="trams"/}:</label>
+        <div>
+            <select id="ccavallsTrams" class="tc-combo tc-combo-cca tc-combo-localitza tc-combo-localitza-tram"></select>
+            <input type="button" class="tc-btn-localitza tc-btn-localitza-tram" value="{@i18n $key="veure"/}" />
+        </div>
+
+        <label style="margin-top:5px;width:90%">{@i18n $key="fites"/}:</label>
+        <div>
+            <select id="ccavallsFites" class="tc-combo tc-combo-localitza"></select>
+            <input type="button" class="tc-btn-localitza tc-btn-localitza-fita" value="{@i18n $key="veure"/}" />
+        </div>
+    </form>
+</div>
+<!--Punts quilomètrics-->
+<div class="tc-ctl tc-ctl-tctr-elm tc-ctl-tctr-elm-ptsqui tc-group tc-ctl-download-cnt tc-hidden">
+    <form>
+        <label style="width:90%">{@i18n $key="via"/}:</label>
+        <div>
+            <select id="ptsquiVia" class="tc-combo tc-combo-ptsqui tc-combo-localitza tc-combo-localitza-via"></select>
+            <input type="button" class="tc-btn-localitza tc-btn-localitza-via" value="{@i18n $key="veure"/}" />
+        </div>
+
+        <label style="margin-top:5px;width:90%">{@i18n $key="pk"/}:</label>
+        <div>
+            <select id="ptsquiPk" class="tc-combo tc-combo-localitza"></select>
+            <input type="button" class="tc-btn-localitza tc-btn-localitza-pk" value="{@i18n $key="veure"/}" />
+        </div>
+    </form>
+</div>
+<!--Guia de carrers-->
+<div class="tc-ctl tc-ctl-tctr-elm tc-ctl-tctr-elm-guica tc-group tc-ctl-download-cnt tc-hidden">
+    <form">
+        <label style="width:90%">{@i18n $key="municipality"/}:</label>
+        <div>
+            <select id="guica_mun" class="tc-combo tc-combo-cca tc-combo-localitza tc-combo-localitza-muni"></select>
+            <input type="button" class="tc-btn-localitza tc-btn-localitza-muni" value="{@i18n $key="veure"/}" />
+        </div>
+
+        <label style="margin-top:5px;width:90%">{@i18n $key="urbanArea"/}:</label>
+        <div>
+            <select id="guica_nuc" class="tc-combo tc-combo-cca tc-combo-localitza tc-combo-localitza-nucl"></select>
+            <input type="button" class="tc-btn-localitza tc-btn-localitza-nucl" value="{@i18n $key="veure"/}" />
+        </div>
+        <label>{@i18n $key="street"/}:</label>
+        <div>
+            <select id="guica_car" class="tc-combo tc-combo-cca tc-combo-localitza tc-combo-localitza-carr"></select>
+            <input type="button" class="tc-btn-localitza tc-btn-localitza-carr" value="{@i18n $key="veure"/}" />
+        </div>
+
+        <label style="margin-top:5px;width:90%">{@i18n $key="portal"/}:</label>
+        <div>
+            <select id="guica_por" class="tc-combo tc-combo-cca tc-combo-localitza"></select>
+            <input type="button" class="tc-btn-localitza tc-btn-localitza-port" value="{@i18n $key="veure"/}" />
+        </div>
+    </form>
+</div>
+
+<!-- Vedats de caça-->
+<div class="tc-ctl tc-ctl-tctr-elm tc-ctl-tctr-elm-vedca tc-group tc-ctl-download-cnt tc-hidden">
+    <form>
+        <label style="width:90%">{@i18n $key="localitzaVedatCaca"/}:</label>
+        <div class="dropdown-content">
+            <input id="vedats" type="text" placeholder="{@i18n $key=" cercaVedatsCaca"/}" class="tc-ctl-search-txt tc-ctl-search-txt-ved" style="width:95%" />
+            <div id="ved_cac" class="dropdown-content autocomplete" style="max-height: 200px;overflow-y: scroll;"></div>
+        </div>
+    </form>
+</div>

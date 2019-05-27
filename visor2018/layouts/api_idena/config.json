@@ -1,0 +1,298 @@
+{
+    "notifyApplicationErrors": true,
+    "i18n": true,
+    "maxExtent": false,
+    "stateful": true,
+    "availableBaseLayers": [
+        {
+            "id": "ign-raster-dyn",
+            "url": "//www.ign.es/wms-inspire/mapa-raster",
+            "layerNames": "mtn_rasterizado"
+        },
+        {
+            "id": "ign-base-dyn",
+            "url": "//www.ign.es/wms-inspire/ign-base",
+            "layerNames": "IGNBaseTodo"
+        },
+        {
+            "id": "ign-pnoa-dyn",
+            "url": "//www.ign.es/wms-inspire/pnoa-ma",
+            "layerNames": "OI.OrthoimageCoverage"
+        },
+        {
+            "id": "ign-mtn-dyn",
+            "url": "//servicios.idee.es/wms-inspire/mdt",
+            "layerNames": "relieve"
+        }
+    ],
+    "baseLayers": [
+        {
+            "id": "mapabase"
+        },
+        {
+            "id": "ortofoto"
+        },
+        {
+            "id": "ortofoto2014",
+            "minResolution": 0.25
+        },
+        {
+            "id": "ortofoto2012"
+        },
+        {
+            "id": "cartografia"
+        },
+        {
+            "id": "relieve",
+            "title": "Relieve",
+            "type": "WMS",
+            "url": "../ogc/wms",
+            "layerNames": "IDENA:mapa_relieve_bn",
+            "format": "image/jpeg",
+            "isDefault": false,
+            "hideTree": true,
+            "thumbnail": "api/tc/css/img/thumb-relief_bw.jpg",
+            "minResolution": 2
+        },
+        {
+            "id": "baseYOrto",
+            "title": "Mapa base/ortofoto",
+            "type": "WMS",
+            "url": "../ogc/wms",
+            "layerNames": "mapaBase_orto",
+            "format": "image/jpeg",
+            "isDefault": false,
+            "hideTree": true,
+            "thumbnail": "api/tc/css/img/thumb-base_ortho.png",
+            "minResolution": 0.25
+        },                    
+        {
+            "id": "catastro",
+            "minResolution": 0.125
+        },
+        {
+            "id": "ign-raster",
+            "type": "WMTS",
+			"title": "Cartografía raster (IGN)",
+            "url": "//www.ign.es/wmts/mapa-raster",
+            "encoding": "KVP",
+            "layerNames": "MTN",
+            "matrixSet": "EPSG:25830",
+            "format": "image/jpeg",
+            "thumbnail": "api/tc/css/img/thumb-carto_ign.png",
+            "fallbackLayer": "ign-raster-dyn"
+        },
+        {
+            "id": "ign-base",
+			"title": "Mapa base (IGN)",
+            "type": "WMTS",
+            "url": "//www.ign.es/wmts/ign-base",
+            "encoding": "KVP",
+            "layerNames": "IGNBaseTodo",
+            "matrixSet": "EPSG:25830",
+            "format": "image/jpeg",
+            "thumbnail": "api/tc/css/img/thumb-basemap_ign.png",
+            "fallbackLayer": "ign-base-dyn"
+        },
+        {
+            "id": "ign-mtn",
+			"title": "Relieve (IGN)",
+            "type": "WMTS",
+            "url": "//servicios.idee.es/wmts/mdt",
+            "encoding": "KVP",
+            "layerNames": "Relieve",
+            "matrixSet": "EPSG:25830",
+            "format": "image/jpeg",
+            "thumbnail": "api/tc/css/img/thumb-relief_ign.jpg",
+            "fallbackLayer": "ign-mtn-dyn"
+        },
+        {
+            "id": "ign-pnoa",
+			"title": "Ortofoto PNOA",
+            "type": "WMTS",
+            "url": "//www.ign.es/wmts/pnoa-ma",
+            "encoding": "KVP",
+            "layerNames": "OI.OrthoimageCoverage",
+            "matrixSet": "EPSG:25830",
+            "format": "image/jpeg",
+            "thumbnail": "api/tc/css/img/thumb-orthophoto_pnoa.jpg",
+            "fallbackLayer": "ign-pnoa-dyn"
+        },
+        {
+            "id": "osm"
+        },
+        {
+            "id": "carto_light"
+        },
+        {
+            "id": "mapbox_satellite"
+        },
+        {
+            "id": "ninguno",
+            "minResolution": 0.125
+        }
+    ],
+    "dropTarget": true,
+    "proxy": "proxy/proxy.ashx?",
+    "contactEmail": "idena@navarra.es",
+    "controls": {
+        "navBar": true,
+        "basemapSelector": {
+            "div": "bms"
+        },
+        "TOC": false,
+        "listTOC": {
+            "div": "toc"
+        },
+        "legend": {
+            "div": "legend"
+        },
+        "coordinates": {
+            "div": "coordinates"
+        },
+        "tabContainer": {
+            "div": "xdata",
+            "defaultSelection": 0,
+            "title": "addMaps",
+            "controls": [
+                {
+                    "name": "externalWMS",
+                    "title": "addWMS",
+                    "options": {
+						"suggestions": [
+							{
+								"group": "Estatales",
+								"items": [
+									{ "name": "Mapa Base (IGN)", "url": "https://www.ign.es/wms-inspire/ign-base" },
+									{ "name": "Redes Geodésicas (IGN)", "url": "https://www.ign.es/wms-inspire/redes-geodesicas" },
+									{ "name": "Cuadrículas Cartográficas (IGN)", "url": "https://www.ign.es/wms-inspire/cuadriculas" },
+									{ "name": "Unidades Administrativas (IGN)", "url": "https://www.ign.es/wms-inspire/unidades-administrativas" },
+									{ "name": "Ocupación del Suelo (IGN)", "url": "https://servicios.idee.es/wms-inspire/ocupacion-suelo" },
+									{ "name": "Cartografía Catastral (DG Catastro)", "url": "https://ovc.catastro.meh.es/Cartografia/WMS/ServidorWMS.aspx" },
+									{ "name": "Catastro Inspire (DG Catastro)", "url": "https://ovc.catastro.meh.es/cartografia/INSPIRE/spadgcwms.aspx" },
+									{ "name": "Cartografía Topográfica (IGN)", "url": "https://www.ign.es/wms-inspire/mapa-raster" },
+									{ "name": "SIGPAC (FEGA)", "url": "http://wms.magrama.es/wms/wms.aspx" },
+									{ "name": "Ortofotos PNOA Máxima Actualidad (IGN)", "url": "https://www.ign.es/wms-inspire/pnoa-ma" },
+									{ "name": "Ortofotos PNOA Históricas (IGN)", "url": "https://www.ign.es/wms/pnoa-historico" },
+									{ "name": "Camino de Santiago (IGN)", "url": "https://www.ign.es/wms-inspire/camino-santiago" },
+									{ "name": "Información Sísmica y Volcánica (IGN)", "url": "https://www.ign.es/wms-inspire/geofisica" },
+									{ "name": "Modelos Digitales del Terreno (IGN)", "url": "https://servicios.idee.es/wms-inspire/mdt" },
+									{ "name": "Series Anuales del Seccionado (INE)", "url": "http://servicios.internet.ine.es/WMS/WMS_INE_SECCIONES_G01/MapServer/WMSServer" },
+									{ "name": "Tramificación Común de Ferrocarril (ADIF)", "url": "http://ideadif.adif.es/gservices/Tramificacion/wms" }
+								]
+							},
+							{
+								"group": "Comunidades limítrofes",
+								"items": [
+									{ "name": "Aragón", "url": "http://idearagon.aragon.es/Visor2D" },
+									{ "name": "La Rioja", "url": "https://ogc.larioja.org/wms/request.php" },
+									{ "name": "País Vasco", "url": "http://www.geo.euskadi.eus/WMS_KARTOGRAFIA" }
+								]
+							},
+							{
+								"group": "Francia",
+								"items": [
+									{ "name": "Geoportail Raster", "url": "https://wxs.ign.fr/njfzwf3vgc55gekk8ra4zezx/geoportail/r/wms" },
+									{ "name": "Geoportail Vector", "url": "https://wxs.ign.fr/njfzwf3vgc55gekk8ra4zezx/geoportail/v/wms" }
+								]
+							}
+						]
+					}
+                },
+                {
+                    "name": "fileImport",
+                    "options": { 
+                        "enableDragAndDrop": true
+                    }
+                }
+            ]
+        },
+        "search": {
+            "div": "search",
+            "url": "//idena.navarra.es/ogc/wfs",
+            "allowedSearchTypes": {
+                "coordinates": { },
+                "municipality": { },
+                "cadastral": { },
+                "urban": { },
+                "street": { },
+                "number": {},
+                "road": {},
+                "roadpk": {},
+                "placename": {},
+				"placenamemunicipality": {}
+            }
+        },
+        "measure": false,
+        "drawMeasureModify": {
+            "div": "measure",
+            "displayElevation": {
+				"resolution": 20,
+				"sampleNumber": 200,
+				"maxCoordLength": 3000
+			}
+        },
+        "overviewMap": {
+            "div": "ovmap",
+            "layer": "mapabase",
+            "alwaysCentered": true
+        },
+        "popup": false,
+        "attribution": true,
+        "scaleBar": true,
+        "featureInfo": {
+            "active": true,
+            "displayElevation": true
+        },
+        "streetView": {
+            "viewDiv": "sv",
+            "googleMapsKey": "AIzaSyBLRczjnHme5fWj9d6rZDJ2jq2-ApMhxi8"
+        },
+        "layerCatalog": {
+            "enableSearch": true,
+            "div": "catalog",
+            "layers": [
+                {
+                    "id": "idena",
+                    "title": "IDENA",
+                    "hideTitle": true,
+                    "type": "WMS",
+                    "url": "../ogc/wms",
+                    "hideTree": false
+                },
+                {
+                    "id": "inspire",
+                    "title": "IDENA INSPIRE",
+                    "hideTitle": true,
+                    "type": "WMS",
+                    "url": "../ogc/inspire/wms",
+                    "hideTree": false
+                }
+            ]
+        },
+        "printMap": {
+            "div": "print"
+        },
+        "download": {
+            "div": "download"
+        },
+        "share": {
+            "div": "share"
+        },
+        "cacheBuilder": {
+            "div": "offline"
+        },
+        "geolocation": {
+            "div": "geolocation",
+            "gapHill": 20
+        },
+        "fullScreen": true,
+        "threeD": {
+            "divMap": "threedMap",
+            "customRender": true,
+            "terrainURL": "//idena.navarra.es/cesiumTerrain/2014/epsg4326/5m/",
+            "allowedGFI":  true,
+            "isDebug":  false
+        }
+    }
+}

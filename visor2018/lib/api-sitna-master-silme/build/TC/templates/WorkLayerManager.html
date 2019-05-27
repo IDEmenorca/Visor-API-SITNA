@@ -1,0 +1,15 @@
+<h2>
+    {@i18n $key="loadedLayers"/}
+    <span style="visibility:visible" class="tc-ctl-wlm-n silme-invisible">0</span>
+    <button class="tc-ctl-wlm-del-all tc-hidden" title="{@i18n $key="removeAllLayersFromMap"/}"></button>
+</h2>
+<div class="tc-ctl-wlm-empty">{@i18n $key="noLayersLoaded.loadLayer"/}</div>
+<div class="tc-ctl-wlm-content tc-hidden">
+    <form>
+        <ul>
+            {#workLayers}
+            {>tc-ctl-wlm-elm:./}
+            {/workLayers}
+        </ul>
+    </form>
+</div>

@@ -1,0 +1,23 @@
+<a class="tc-ctl-lcat-info-close"></a>
+<h2>{@i18n $key="layerInfo"/}</h2>
+<h3 class="tc-ctl-lcat-title">{title}</h3>
+{?abstract}
+<div class="tc-ctl-lcat-abstract">
+    <h4>{@i18n $key="abstract"/}</h4>
+    <div><pre>{abstract|s}<br><br><b>{@i18n $key="layerId"/}&emsp;&ensp;{layerid|s}</b></pre></div>
+</div>
+{/abstract}
+{?metadata}
+<div class="tc-ctl-lcat-metadata">
+    {#metadata}
+        <a href="{url|s}" type="{format}" title="{formatDescription}" target="_blank">{formatDescription|s}</a>
+    {/metadata}
+</div>
+{/metadata}
+{?dataUrl}
+<div class="tc-ctl-lcat-descarregadades">
+    {#dataUrl}
+        <a href="{url|s}" type="{format}" title="{formatDescription}" target="_blank">{formatDescription}</a>
+    {/dataUrl}
+</div>
+{/dataUrl}

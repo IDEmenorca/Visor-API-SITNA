@@ -1,0 +1,107 @@
+﻿.tc-combo-localitza {
+    width: 70%
+}
+
+.tc-btn-localitza {
+    width:20%;
+    height:25px;
+    margin-left:10px;
+    right:20px
+}
+
+.tc-ctl-download-help {
+    position: relative;
+    left: 0%
+}
+
+.tc-ctl-wlm-del {
+    top: 1em !important
+}
+
+.tc-ctl-wlm-dd {
+    display: inline-block !important;
+    position: relative !important;
+    vertical-align: top !important;
+    width: 0% !important;
+    margin-top: 0em !important;
+}
+
+.tc-ctl-wlm-btn-info {
+    line-height: 1.2em !important;
+    margin-left: 10px;
+}
+
+.tc-ctl-lcat-branch {
+    margin-left: -5px !important;
+}
+
+.tc-ctl-lcat-tree > .tc-ctl-lcat-branch {
+    margin-left: 0px !important;
+}
+
+li.tc-ctl-lcat-node {
+    line-height: 1.75em !important
+}
+
+.ol-zoomslider {
+  display: none !important
+}
+
+.tc-ctl-nav-btn-zoomout.ol-zoom-out {
+    top: 0em !important
+}
+
+.tc-ctl-lcat-tree {
+    max-height: 40em
+}
+
+@media screen and (min-width: 24em) {
+    .slide-panel {
+        max-width: 23em !important
+    }
+}
+
+@media screen and (min-height: 42em) {
+    .tools-panel {
+        width: 23em !important
+    }
+}
+
+/*leaf es el div contenidor, span es el text en si*/
+li.tc-ctl-lcat-leaf.tc-ctl-lcat-leaf:hover {
+    background-color: #EEEEEE !important;
+    cursor: pointer
+}
+
+li.tc-ctl-lcat-leaf:hover > span.tc-selectable {
+    background-color: #EEEEEE !important
+}
+
+li.tc-ctl-lcat-leaf > span.tc-selectable:hover{
+    background-color: #EEEEEE !important
+}
+li.tc-ctl-lcat-node > span {
+    -webkit-transition: none !important
+}
+
+.tc-ctl-legend-watch > img:hover {
+    cursor: pointer;
+}
+
+.tools-panel > .panel-content {
+    max-height: 60em !important
+}
+
+.silme-invisible {
+    visibility: hidden !important
+}
+
+span[data-tooltip]{
+    top:100% !important
+}
+
+.tc-ctl-bms input[type="range"] {
+    width: 60% !important;
+    margin-bottom: 0px !important;
+    margin-left: 25px !important
+}

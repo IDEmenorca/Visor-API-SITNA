@@ -1,0 +1,15 @@
+﻿/*function AjustarPanell() {
+    if (!$('#bms').hasClass("tc-collapsed") && !$('#catalog').hasClass("tc-collapsed")){
+        $('#arbol').css("height", "calc(100vh - " + ($('#links').outerHeight() + $('#bms').outerHeight() + $('#catalog').children("h2").outerHeight() + $('#xdata').children("h2").outerHeight() + $('#toc').children("h2").outerHeight() + ($('#mapa').outerHeight() - $('#tools-panel').children(".panel-content").outerHeight())) + "px)");
+        $('.tc-ctl-lcat-search').css("height", "calc(100vh - " + ($('#links').outerHeight() + $('#bms').outerHeight() + $('#catalog').children("h2").outerHeight() + $('#xdata').children("h2").outerHeight() + $('#toc').children("h2").outerHeight() + ($('#mapa').outerHeight() - $('#tools-panel').children(".panel-content").outerHeight())) + "px)");
+    }else if (!$('#xdata').hasClass("tc-collapsed") && !$('#catalog').hasClass("tc-collapsed")){
+        $('#arbol').css("height", "calc(100vh - " + ($('#links').outerHeight() + $('#bms').children("h2").outerHeight() + $('#catalog').children("h2").outerHeight() + $('#xdata').outerHeight() + $('#toc').children("h2").outerHeight() + ($('#mapa').outerHeight() - $('#tools-panel').children(".panel-content").outerHeight())) + "px)");
+        $('.tc-ctl-lcat-search').css("height", "calc(100vh - " + ($('#links').outerHeight() + $('#bms').children("h2").outerHeight() + $('#catalog').children("h2").outerHeight() + $('#xdata').outerHeight() + $('#toc').children("h2").outerHeight() + ($('#mapa').outerHeight() - $('#tools-panel').children(".panel-content").outerHeight())) + "px)");
+    }else if (!$('#toc').hasClass("tc-collapsed") && !$('#catalog').hasClass("tc-collapsed")){
+        $('#arbol').css("height", "calc(100vh - " + ($('#links').outerHeight() + $('#bms').children("h2").outerHeight() + $('#catalog').children("h2").outerHeight() + $('#xdata').children("h2").outerHeight() + $('#toc').outerHeight() + ($('#mapa').outerHeight() - $('#tools-panel').children(".panel-content").outerHeight())) + "px)");
+        $('.tc-ctl-lcat-search').css("height", "calc(100vh - " + ($('#links').outerHeight() + $('#bms').children("h2").outerHeight() + $('#catalog').children("h2").outerHeight() + $('#xdata').children("h2").outerHeight() + $('#toc').outerHeight() + ($('#mapa').outerHeight() - $('#tools-panel').children(".panel-content").outerHeight())) + "px)");
+    }else{
+    $('#arbol').css("height", "calc(100vh - " + ($('#links').outerHeight() + $('#bms').children("h2").outerHeight() + $('#catalog').children("h2").outerHeight() + $('#xdata').children("h2").outerHeight() + $('#toc').children("h2").outerHeight() + ($('#mapa').outerHeight() - $('#tools-panel').children(".panel-content").outerHeight())) + "px)");
+    $('.tc-ctl-lcat-search').css("height", "calc(100vh - " + ($('#links').outerHeight() + $('#bms').children("h2").outerHeight() + $('#catalog').children("h2").outerHeight() + $('#xdata').children("h2").outerHeight() + $('#toc').children("h2").outerHeight() + ($('#mapa').outerHeight() - $('#tools-panel').children(".panel-content").outerHeight())) + "px)");
+}
+}*/

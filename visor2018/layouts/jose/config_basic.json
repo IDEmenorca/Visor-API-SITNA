@@ -1,0 +1,163 @@
+{
+  "i18n": true,
+  "stateful": true,
+  "controls": {
+    "navBar": {
+      "div": null
+    },
+    "basemapSelector": {
+      "div": "bms"
+    },
+    "TOC": {
+      "div": null
+    },
+    "workLayerManager": {
+      "div": "toc"
+    },
+    "legend": {
+      "div": "legend"
+    },
+    "localitzar": {
+      "div": "localitzar"
+    },
+    "coordinates": {
+      "div": "coordinates"
+    },
+    "vedatsCaca": {
+      "div": "vedatsCaca"
+    },
+    "search": {
+      "div": "search"
+    },
+    "measure": {
+      "div": null
+    },
+    "drawMeasureModify": {
+      "div": null
+    },
+    "download": {
+      "div": "download"
+    },
+    "tabContainer": {
+      "div": "xdata",
+      "defaultSelection": 0,
+      "title": "addMaps",
+      "controls": [
+        {
+          "name": "externalWMS",
+          "title": "addWMS",
+          "options": {
+            "suggestions": [
+              {
+                "group": "Estatals",
+                "items": [
+                  {
+                    "name": "kk",
+                    "url": "https://www.ign.es/wms-inspire/redes-geodesicas"
+                  },
+                  {
+                    "name": "Quadrícules cartogràficas (IGN)",
+                    "url": "https://www.ign.es/wms-inspire/cuadriculas"
+                  },
+                  {
+                    "name": "Unitats Administratives (IGN)",
+                    "url": "https://www.ign.es/wms-inspire/unidades-administrativas"
+                  },
+                  {
+                    "name": "Ocupació del Sòl (IGN)",
+                    "url": "https://servicios.idee.es/wms-inspire/ocupacion-suelo"
+                  },
+                  {
+                    "name": "Cartografia Inspire (DG Catastro)",
+                    "url": "https://ovc.catastro.meh.es/cartografia/INSPIRE/spadgcwms.aspx"
+                  },
+                  {
+                    "name": "Cartografia Topogràfica (IGN)",
+                    "url": "https://www.ign.es/wms-inspire/mapa-raster"
+                  },
+                  {
+                    "name": "Ortofotos PNOA Màxima Actualitat (IGN)",
+                    "url": "https://www.ign.es/wms-inspire/pnoa-ma"
+                  },
+                  {
+                    "name": "Ortofotos PNOA Històricas (IGN)",
+                    "url": "https://www.ign.es/wms/pnoa-historico"
+                  },
+                  {
+                    "name": "Informació Sísmica i Volcànica (IGN)",
+                    "url": "https://www.ign.es/wms-inspire/geofisica"
+                  },
+                  {
+                    "name": "Models Digitals del Terreny (IGN)",
+                    "url": "https://servicios.idee.es/wms-inspire/mdt"
+                  },
+                  {
+                    "name": "Sèries Anuals del Seccionat (INE)",
+                    "url": "http://servicios.internet.ine.es/WMS/WMS_INE_SECCIONES_G01/MapServer/WMSServer"
+                  }
+                ]
+              },
+              {
+                "group": "IDEIB",
+                "items": [
+                  {
+                    "name": "Aragón",
+                    "url": "http://idearagon.aragon.es/Visor2D"
+                  },
+                  {
+                    "name": "La Rioja",
+                    "url": "https://ogc.larioja.org/wms/request.php"
+                  },
+                  {
+                    "name": "País Vasco",
+                    "url": "http://www.geo.euskadi.eus/WMS_KARTOGRAFIA"
+                  }
+                ]
+              }
+            ],
+            "enableDragAndDrop": false
+          }
+        },
+        {
+          "name": "fileImport",
+          "title": null,
+          "options": {
+            "suggestions": null,
+            "enableDragAndDrop": true
+          }
+        }
+      ]
+    },
+    "overviewMap": {
+      "div": "ovmap",
+      "layer": "mapabase"
+    },
+    "share": {
+      "div": "share"
+    },
+    "popup": true,
+    "attribution": true,
+    "scaleBar": true,
+    "layerCatalog": {
+      "div": "catalog",
+      "enableSeach": false,
+      "layerTreeGroups": [
+        {
+          "id": "node0",
+          "title": "Serveis IDE Menorca"
+        }
+      ],
+      "layers": [
+        {
+          "id": "turisme",
+          "title": "Tur",
+          "hideTitle": false,
+          "type": "WMS",
+          "url": "http://ide.cime.es/geoserver/turisme/wms/",
+          "hideTree": false,
+          "parentGroupNode": "node0"
+        }
+      ]
+    }
+  }
+}

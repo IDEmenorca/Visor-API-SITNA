@@ -1,0 +1,77 @@
+{
+  "i18n": true,
+  "stateful": true,
+  "controls": {
+    "navBar": {
+      "div": "nav"
+    },
+    "StreetView": {
+      "div": "StreetView"
+    },
+    "BirdEye": {
+      "div": "BirdEye"
+    },
+    "FullScreen": {
+      "div": "FuScreen"
+    },
+    "basemapSelector": {
+      "div": "bms"
+    },
+    "TOC": {
+      "div": null
+    },
+    "workLayerManager": {
+      "div": "toc"
+    },
+    "coordinates": {
+      "div": "coordinates"
+    },
+    "search": {
+      "div": "search"
+    },
+    "Legend": {
+      "div": "legend"
+    },
+    "Measure": {
+      "div": "measure"
+    },
+    "Share": {
+      "div": "share"
+    },
+    "Download": {
+      "div": "download"
+    },
+    "tabContainer": {
+      "div": "xdata",
+      "defaultSelection": 0,
+      "title": "addMaps",
+      "controls": [
+        {
+          "name": "externalWMS",
+          "title": "addWMS",
+          "options": {
+            "suggestions": [
+
+            ],
+            "enableDragAndDrop": false
+          }
+        },
+        {
+          "name": "fileImport",
+          "title": null,
+          "options": {
+            "suggestions": null,
+            "enableDragAndDrop": true
+          }
+        }
+      ]
+    },
+    "overviewMap": {
+      "div": "ovmap",
+      "layer": "mapabase"
+    },
+    "popup": true,
+    "attribution": true,
+    "scaleBar": true
+  }
+}

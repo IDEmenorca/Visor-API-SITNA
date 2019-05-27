@@ -1,0 +1,138 @@
+{
+    "i18n": true,
+	"stateful": true,
+    "controls": {
+        "navBar": true,
+        "basemapSelector": {
+            "div": "bms"
+        },
+        "TOC": false,
+        "workLayerManager": {
+          "div": "toc"
+        },
+        "legend": {
+            "div": "legend"
+        },
+        "coordinates": {
+            "div": "coordinates"
+        },
+        "search": {
+            "div": "search"
+        },
+        "measure": false,
+        "drawMeasureModify": {
+          "div": "measure"
+        },
+        "tabContainer": {
+            "div": "xdata",
+            "defaultSelection": 0,
+            "title": "addMaps",
+            "controls": [
+              {
+                "name": "externalWMS",
+                "title": "addWMS",
+                "options": {
+                  "suggestions": [
+                    {
+                      "group": "Estatals",
+                      "items": [
+                        {
+                          "name": "Mapa Base (IGN)",
+                          "url": "https://www.ign.es/wms-inspire/ign-base"
+                        },
+                        {
+                          "name": "Xarxes Geodèsiques (IGN)",
+                          "url": "https://www.ign.es/wms-inspire/redes-geodesicas"
+                        },
+                        {
+                          "name": "Quadrícules cartogràficas (IGN)",
+                          "url": "https://www.ign.es/wms-inspire/cuadriculas"
+                        },
+                        {
+                          "name": "Unitats Administratives (IGN)",
+                          "url": "https://www.ign.es/wms-inspire/unidades-administrativas"
+                        },
+                        {
+                          "name": "Ocupació del Sòl (IGN)",
+                          "url": "https://servicios.idee.es/wms-inspire/ocupacion-suelo"
+                        },
+                        {
+                          "name": "Cartografia Cadastral (DG Catastro)",
+                          "url": "https://ovc.catastro.meh.es/Cartografia/WMS/ServidorWMS.aspx"
+                        },
+                        {
+                          "name": "Cartografia Inspire (DG Catastro)",
+                          "url": "https://ovc.catastro.meh.es/cartografia/INSPIRE/spadgcwms.aspx"
+                        },
+                        {
+                          "name": "Cartografia Topogràfica (IGN)",
+                          "url": "https://www.ign.es/wms-inspire/mapa-raster"
+                        },
+                        {
+                          "name": "SIGPAC (FEGA)",
+                          "url": "http://wms.magrama.es/wms/wms.aspx"
+                        },
+                        {
+                          "name": "Ortofotos PNOA Màxima Actualitat (IGN)",
+                          "url": "https://www.ign.es/wms-inspire/pnoa-ma"
+                        },
+                        {
+                          "name": "Ortofotos PNOA Històricas (IGN)",
+                          "url": "https://www.ign.es/wms/pnoa-historico"
+                        },
+                        {
+                          "name": "Informació Sísmica i Volcànica (IGN)",
+                          "url": "https://www.ign.es/wms-inspire/geofisica"
+                        },
+                        {
+                          "name": "Models Digitals del Terreny (IGN)",
+                          "url": "https://servicios.idee.es/wms-inspire/mdt"
+                        },
+                        {
+                          "name": "Sèries Anuals del Seccionat (INE)",
+                          "url": "http://servicios.internet.ine.es/WMS/WMS_INE_SECCIONES_G01/MapServer/WMSServer"
+                        }
+                      ]
+                    },
+                    {
+                      "group": "IDEIB",
+                      "items": [
+                        {
+                          "name": "Aragón",
+                          "url": "http://idearagon.aragon.es/Visor2D"
+                        },
+                        {
+                          "name": "La Rioja",
+                          "url": "https://ogc.larioja.org/wms/request.php"
+                        },
+                        {
+                          "name": "País Vasco",
+                          "url": "http://www.geo.euskadi.eus/WMS_KARTOGRAFIA"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+                {
+                    "name": "fileImport",
+                    "options": { 
+                        "enableDragAndDrop": true
+                    }
+                }
+            ]
+        },        
+        
+        
+        "overviewMap": {
+            "div": "ovmap",
+            "layer": "mapabase"
+        },
+        "share": {
+            "div": "share"
+        },
+        "popup": true,
+        "attribution": true,
+        "scaleBar": true
+    }
+}
