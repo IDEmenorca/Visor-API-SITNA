@@ -95,7 +95,7 @@
       <HintPath>C:\Users\usil0001\Documents\Visual Studio 2015\Projects\SigSilmeOL\SigSilmeOL\bin\Debug\Npgsql.dll</HintPath>
     </Reference>
     <Reference Include="Silme.Sig.BDUtils">
-      <HintPath>C:\Users\usil0001\Documents\Visual Studio 2015\Projects\SigSilmeOL\BDUtils\bin\Debug\Silme.Sig.BDUtils.dll</HintPath>
+      <HintPath>..\dll\Silme.Sig.BDUtils.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
